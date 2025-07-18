@@ -1,13 +1,12 @@
 // src/components/ProductCard.js
 import Image from 'next/image';
 import styles from './ProductCard.module.css';
-import { useCart } from '@/context/CartContext'; // 1. Importe o useCart
 
+// Este componente recebe um objeto 'produto' como propriedade (prop)
 export default function ProductCard({ produto }) {
-  const { addToCart } = useCart(); // 2. Pegue a função addToCart do contexto
-
   return (
     <div className={styles.card}>
+      {/* O componente <Image> do Next.js otimiza as imagens para nós */}
       <Image
         src={produto.imagem}
         alt={produto.nome}
@@ -18,18 +17,13 @@ export default function ProductCard({ produto }) {
       <div className={styles.cardContent}>
         <h3 className={styles.cardTitle}>{produto.nome}</h3>
         <p className={styles.cardCategory}>{produto.categoria}</p>
-        <div className={styles.footer}>
-          <p className={styles.cardPrice}>
-            {produto.preco.toLocaleString('pt-BR', {
-              style: 'currency',
-              currency: 'BRL',
-            })}
-          </p>
-          {/* 3. Adicione o botão e chame a função no clique */}
-          <button className={styles.addButton} onClick={() => addToCart(produto)}>
-            Adicionar
-          </button>
-        </div>
+        <p className={styles.cardPrice}>
+          {/* Esta linha formata o número para o padrão de moeda brasileiro */}
+          {produto.preco.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+          })}
+        </p>
       </div>
     </div>
   );
