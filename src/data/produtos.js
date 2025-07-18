@@ -5,7 +5,7 @@ export const produtos = [
     nome: 'Uramaki Filadélfia',
     preco: 22.50,
     categoria: 'Makis',
-    imagem: '/images/sashimi.jpg', // O caminho começa na pasta 'public'
+    imagem: '/images/sashimi.jpg', 
   },
   {
     id: 2,
