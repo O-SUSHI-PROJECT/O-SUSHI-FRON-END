@@ -1,29 +1,43 @@
-/* Adicione este código ao final de ProductCard.module.css */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
+/* src/components/ProductCard.module.css */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem 0;
+  color: #333;
+}
+
+.cardCategory {
+  font-size: 0.8rem;
+  color: #e63946; /* Um tom de vermelho */
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cardPrice {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1d3557;
-  margin: 0; /* Removido o text-align e margin-top */
-}
-
-.addButton {
-  background-color: #e63946;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.addButton:hover {
-  background-color: #c12a36;
+  color: #1d3557; /* Um tom de azul escuro */
+  text-align: right;
 }
