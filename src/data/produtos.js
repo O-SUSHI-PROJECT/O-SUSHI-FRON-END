@@ -5,7 +5,7 @@ export const produtos = [
     nome: 'Uramaki Filadélfia',
     preco: 22.50,
     categoria: 'Makis',
-    imagem: '/images/sashimi.jpg', 
+    imagem: '/images/uramaki.jpg', 
   },
   {
     id: 2,
@@ -19,13 +19,13 @@ export const produtos = [
     nome: 'Combinado do Chef (20 peças)',
     preco: 75.00,
     categoria: 'Combinados',
-    imagem: '/images/barca.jpg',
+    imagem: '/images/combinado.jpg',
   },
   {
     id: 4,
     nome: 'Sashimi de Atum (5 fatias)',
     preco: 32.00,
     categoria: 'Sashimis',
-    imagem: '/images/sushi.jpg',
+    imagem: '/images/sashimi-atum.jpg',
   },
 ];
