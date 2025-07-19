@@ -1,7 +1,8 @@
 // src/app/layout.js
+import Header from '@/components/Header';
+import { CartProvider } from '@/context/CartContext'; 
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { CartProvider } from '@/context/CartContext'; // 1. Importe o Provider
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body className={inter.className}>
         {/* 2. Envolva o children com o CartProvider */}
-        <CartProvider>{children}</CartProvider>
+        <CartProvider>
+          <Header/>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

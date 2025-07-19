@@ -1,9 +1,15 @@
 // src/components/ProductCard.js
+'use client';
+
 import Image from 'next/image';
 import styles from './ProductCard.module.css';
+import { useCart } from '@/context/CartContext';
+import Button from './Button';
 
 // Este componente recebe um objeto 'produto' como propriedade (prop)
 export default function ProductCard({ produto }) {
+  const { addToCart } = useCart();
+
   return (
     <div className={styles.card}>
       {/* O componente <Image> do Next.js otimiza as imagens para nós */}
@@ -25,6 +31,9 @@ export default function ProductCard({ produto }) {
           })}
         </p>
       </div>
+      <Button onClick={() => addToCart(produto)}>
+          Adicionar ao Carrinho
+      </Button>
     </div>
   );
 }

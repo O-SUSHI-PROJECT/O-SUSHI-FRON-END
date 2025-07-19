@@ -1,0 +1,139 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .title {
+    color: #1d3557;
+    margin-bottom: 2rem;
+  }
+  
+  .cartContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cartItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .itemImage {
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .itemDetails {
+    flex-grow: 1;
+  }
+  
+  .itemName {
+    margin: 0 0 0.25rem;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .itemPrice {
+    margin: 0;
+    color: #555;
+  }
+  
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.25rem;
+  }
+  
+  .quantityControl button {
+    background: #f0f0f0;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  
+  .quantityControl span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .removeButton {
+    background: none;
+    border: none;
+    color: #e63946;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  
+  .summary {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 100px; /* Alinhado abaixo do header */
+  }
+  
+  .summary h2 {
+    margin-top: 0;
+  }
+  
+  .summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .summaryRow.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1d3557;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+  
+  /* Estilo para quando o carrinho está vazio */
+  .emptyCart {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .emptyCart h1 {
+    color: #1d3557;
+  }
+  
+  .emptyCart p {
+    color: #457b9d;
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 900px) {
+    .cartContainer {
+      grid-template-columns: 1fr;
+    }
+  }
