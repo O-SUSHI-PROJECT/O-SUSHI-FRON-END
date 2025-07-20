@@ -1,0 +1,129 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.successCard {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.successCard h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+
+.message {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0 0 30px 0;
+  line-height: 1.5;
+}
+
+.orderInfo {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #e9ecef;
+}
+
+.orderInfo p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.orderId {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #667eea !important;
+  font-family: monospace;
+  background: #e6f3ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px !important;
+}
+
+.info {
+  text-align: left;
+  margin: 30px 0;
+}
+
+.info h3 {
+  color: #333;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li {
+  padding: 8px 0;
+  color: #666;
+  position: relative;
+  padding-left: 25px;
+}
+
+.info li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.actions {
+  margin-top: 30px;
+}
+
+.contact {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.contact p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.phone {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #667eea !important;
+}
+
+@media (max-width: 768px) {
+  .successCard {
+    padding: 30px 20px;
+  }
+  
+  .successCard h1 {
+    font-size: 1.8rem;
+  }
+  
+  .icon {
+    font-size: 3rem;
+  }
+} 
