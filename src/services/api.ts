@@ -8,7 +8,7 @@ class ApiService {
   constructor() {
     this.api = axios.create({
       baseURL: 'https://o-sushi-back-end.onrender.com',
-      timeout: 20000,
+      timeout: 50000,
     });
 
     // Interceptor para adicionar API key quando disponível
