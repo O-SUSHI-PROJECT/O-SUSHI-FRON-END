@@ -12,7 +12,7 @@ export const produtos = [
     nome: 'Temaki Salmão Completo',
     preco: 28.00,
     categoria: 'Temakis',
-    imagem: '/images/temaki.jpg',
+    imagem: '/images/barca.jpg',
   },
   {
     id: 3,
@@ -30,4 +30,3 @@ export const produtos = [
   },
 ];
 
-//test
